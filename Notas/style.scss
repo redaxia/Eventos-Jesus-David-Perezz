@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    main {
+        background-image: linear-gradient(
+          109.6deg,
+          rgba(62, 161, 219, 1) 11.2%,
+          rgba(93, 52, 236, 1) 100.2%
+        );
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mainCard {
+            width: 80%;
+            height: 90%;
+            border-radius: 25px;
+            background-color: #fff;
+            padding: 25px;
+
+            .title {
+                font-family: 'Dosis', sans-serif;
+                display: flex;
+                width: 80%;
+                height: 30px;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 15px;
+
+                img{
+                    width: 5%;
+                    height: 100%;
+                }
+            }
+
+            .contenedor{
+                height: 30%;
+                margin-bottom: 30px;
+                form{
+                    width: 100%;
+                    height: 70%;
+                    justify-content: space-between;
+                    align-items: center;
+                    display: flex;
+                    margin-bottom: 15px;
+    
+                    .inputs{
+                        
+                        width: 60%;
+                        height: 100%;
+                        .inputForm {
+                            border: none;
+                            padding: 10px;
+                            border: 1px solid #eee;
+                            outline: none;
+                            width: 80%;
+                            margin-bottom: 10px;
+                        }
+
+                        .inputNota{
+                            height: 50%;
+                            border: none;
+                            padding: 10px;
+                            border: 1px solid #eee;
+                            outline: none;
+                            width: 80%;
+                            margin-bottom: 10px;
+                        }
+                        .inputForm::placeholder {
+                            padding: 0px;
+                        }
+                    }
+
+                    .botones{
+                        
+                        width: 20%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        .btnCreate {
+                            padding: 10px 15px;
+                            background-image: linear-gradient(
+                              109.6deg,
+                              rgba(62, 161, 219, 1) 11.2%,
+                              rgba(93, 52, 236, 1) 100.2%
+                            );
+                            border: none;
+                            color: #fff;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            margin-bottom: 10px;
+                        }
+                        .btnDelete {
+                            padding: 10px 15px;
+                            background-image: linear-gradient(
+                              109.6deg,
+                              rgb(219, 62, 62) 11.2%,
+                              rgb(70, 22, 243) 100.2%
+                            );
+                            border: none;
+                            color: #fff;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .filtros{
+                    height: 30%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    #filtroRealizada{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 20px;
+                        margin-right: 10px;
+                    }
+                    
+                    #busqueda{
+                        padding: 6px;
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    
+                }
+            }
+
+            .cardsList {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                overflow-y: scroll;
+                max-height: 50vh;
+                height: 60vh;
+
+                .card{
+                    width: 300px;
+                    height: 250px;
+                    margin-bottom: 10px;
+
+                    .icon {
+                        cursor: pointer;
+                    }
+                      
+                    .icon:hover {
+                        color: rgba(62, 161, 219, 1);
+                    }
+
+                    .trashIcon:hover {
+                        color: #f00;
+                    }
+                }
+
+                .filter{
+                    display: none;
+                }
+              }
+        }
+
+        
+    }
+}

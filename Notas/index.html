@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Notas</title>
+</head>
+<body>
+    <main>
+        <div class="mainCard">
+          <div class="title"><img src="./nota.jpg" /><h2>Nueva nota</h2></div>
+          <div class="contenedor">
+            <form action="">
+                <div class="inputs">
+                    <input type="text" name="task" placeholder="Titulo de la tarea" id="titulo" class="inputForm" autocomplete="off" data-form-input/>
+                    <textarea name="contenidoNotas" id="nota" class="inputNota" placeholder="Escribe tu nota aqui"></textarea>
+                </div>
+                <div class="botones">
+                    <button type="submit" class="btnCreate" id="create"> Agregar <i class="fas fa-plus-circle"></i> </button>
+                    <button type="submit" class="btnDelete" id="delete"> Borrar <i class="fas fa-plus-circle"></i></button>
+                </div>
+              
+            </form>
+            <div class="filtros">
+              <input type="search" name="busqueda" placeholder="Buscar..." id="busqueda">
+              <input type="checkbox" name="realizada" id="checkbox" onclick="filtroCheckbox()"> Tareas Realizadas
+            </div>
+          </div>
+          <ul class="cardsList" id="list">
+            <h3 class=" " id="mensaje">No hay notas para mostrar</h3>
+            
+          </ul>
+        </div>
+      </main>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

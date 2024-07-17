@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+}
+
+body main {
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body main .mainCard {
+  width: 80%;
+  height: 90%;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  padding: 25px;
+}
+
+body main .mainCard .title {
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  width: 80%;
+  height: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+body main .mainCard .title img {
+  width: 5%;
+  height: 100%;
+}
+
+body main .mainCard .contenedor {
+  height: 30%;
+  margin-bottom: 30px;
+}
+
+body main .mainCard .contenedor form {
+  width: 100%;
+  height: 70%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+body main .mainCard .contenedor form .inputs {
+  width: 60%;
+  height: 100%;
+}
+
+body main .mainCard .contenedor form .inputs .inputForm {
+  border: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 80%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+body main .mainCard .contenedor form .inputs .inputNota {
+  height: 50%;
+  border: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 80%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+body main .mainCard .contenedor form .inputs .inputForm::-moz-placeholder {
+  padding: 0px;
+}
+
+body main .mainCard .contenedor form .inputs .inputForm::placeholder {
+  padding: 0px;
+}
+
+body main .mainCard .contenedor form .botones {
+  width: 20%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body main .mainCard .contenedor form .botones .btnCreate {
+  padding: 10px 15px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+body main .mainCard .contenedor form .botones .btnDelete {
+  padding: 10px 15px;
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+body main .mainCard .contenedor .filtros {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+body main .mainCard .contenedor .filtros #filtroRealizada {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+body main .mainCard .contenedor .filtros #busqueda {
+  padding: 6px;
+}
+
+body main .mainCard .contenedor .filtros #busqueda:focus {
+  outline: none;
+}
+
+body main .mainCard .cardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  max-height: 50vh;
+  height: 60vh;
+}
+
+body main .mainCard .cardsList .card {
+  width: 300px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+body main .mainCard .cardsList .card .icon {
+  cursor: pointer;
+}
+
+body main .mainCard .cardsList .card .icon:hover {
+  color: #84fab0;
+}
+
+body main .mainCard .cardsList .card .trashIcon:hover {
+  color: #ff9a9e;
+}
+
+body main .mainCard .cardsList .filter {
+  display: none;
+}
